@@ -33,9 +33,9 @@ reboot
 ```
 gamescope -f -S fit -F fsr -- %command%
 ```
-(other useful flags example)
+(other useful flags (cs2 example))
 ```
-gamescope -W 5120 -H 1440 -r 200 -f -e --immediate-flips -- %command%
+gamescope -W 5120 -H 1440 -r 240 -f -b --force-grab-cursor --expose-wayland -- %command%
 ```
 
 ## lsfg-vk (for frame generation, create a profile manually or with the UI and call it with this environment variable)
