@@ -38,14 +38,14 @@ gamescope -f -S fit -F fsr -- %command%
 gamescope -W 5120 -H 1440 -r 240 -f -b --force-grab-cursor --expose-wayland -- %command%
 ```
 
-## lsfg-vk (for frame generation, create a profile manually or with the UI and call it with this environment variable)
+## lsfg-vk 2.0 (for frame generation, create a profile manually or with the UI and call it with this environment variable)
 ```
-LSFG_PROCESS=<profile-name>
+LSFGVK_PROFILE="profilename" %command%   
 ```
 # Game examples i use
 ## The Finals
 ```
-LSFG_PROCESS=performance PROTON_USE_NTSYNC=1 mangohud %command%
+LSFGVK_PROFILE="lsfg" mangohud %command%
 ```
 ## Old VNs (ej. Majikoi)
 ```
