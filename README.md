@@ -38,7 +38,7 @@ gamescope -f -S fit -F fsr -- %command%
 gamescope -W 5120 -H 1440 -r 240 -f -b --force-grab-cursor --expose-wayland -- %command%
 ```
 
-## lsfg-vk 2.0 (for frame generation, create a profile manually or with the UI and call it with this environment variable)
+## lsfg-vk 2.0 (for frame generation, create a profile manually or with the UI and call it with this environment variable (make sure to select the lsfg-vk version on your steam settings))
 ```
 LSFGVK_PROFILE="profilename" %command%   
 ```
@@ -50,14 +50,4 @@ LSFGVK_PROFILE="lsfg" mangohud %command%
 ## Old VNs (ej. Majikoi)
 ```
 gamescope -f -S fit -F fsr -- %command%
-```
-
-## To add lutris games to steam on NixOS
-after clicking on adding to steam exit and launch steam again, then go to the game properties and on launch options add at the beginning:
-```
-steam-run %command%
-```
-so it looks something like this:
-```
-steam-run %command% lutris:rungameid/2
 ```
